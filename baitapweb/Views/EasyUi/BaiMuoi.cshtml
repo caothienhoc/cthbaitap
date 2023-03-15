@@ -1,0 +1,160 @@
+﻿
+@{
+    ViewBag.Title = "BaiMuoi";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div id="w" class="easyui-window" title="new datatime" data-options="iconCls:'icon-save'" style="width:400px;height:400px;padding:10px;">
+    <div class="easyui-panel" style="width:100%;max-width:400px;padding:30px 60px;">
+        <div style="margin-bottom:20px">
+            <input id="DateTime1" class="easyui-datetimebox" label="Select DateTime:" labelPosition="top" style="width:100%;">
+        </div>
+    </div>
+    <a href="#" id="AddDateTime"  class="easyui-linkbutton" style="display:flex;justify-content:center">Add</a>
+</div>
+
+
+@*Basic Tabs*@
+<h2>Basic Tabs</h2>
+<div style="margin:20px 0 10px 0;"></div>
+<div class="easyui-tabs" style="width:700px;height:500px">
+    @*DateTimeSpinner*@
+    <div title="DateTimeSpinner" style="padding: 10px; width: 50%; display: flex; justify-content: center">
+        <div style="margin:20px 0;"></div>
+        <div class="easyui-panel" style="width:100%;max-width:400px;padding:30px 60px;">
+            <div style="margin-bottom:20px">
+                <input id="DateTime2" class="easyui-datetimespinner" label="Date Time:" labelPosition="top" value="" style="width:100%;">
+            </div>
+
+            <a href="javascript:void(0)" class="easyui-linkbutton open">open</a>
+        </div>
+
+    </div>
+
+
+    @*Basic Slider*@
+    <div title="Slider" style="padding: 10px; width: 50%; display: flex; justify-content: center">
+        <div>
+            <div style="margin:20px 0 50px 0;"></div>
+            <input class="es easyui-slider" style="width:300px" data-options="showTip:true,min:10,max:1000">
+            <br />
+            <div style="margin-bottom:20px;width:100%;display:flex">
+                <input id="value" value="" placeholder="some number" class="easyui-validatebox tb">
+                <a id="getValue" class="easyui-linkbutton">Add</a>
+                <a id="hValue" href="#" class="easyui-linkbutton">alert value</a>
+            </div>
+        </div>
+    </div>
+    @*Basic ComboGrid*@
+    <div title="ComboGrid" style="padding: 10px; width: 50%; display: flex; justify-content: center">
+        <div style="margin:20px 0"></div>
+        <div class="easyui-panel" style="width:100%;max-width:400px;padding:30px 60px;">
+            <div style="margin-bottom:20px">
+                <select class="easyui-combogrid" style="width:100%" data-options="
+                    panelWidth: 500,
+                    idField: 'itemid',
+                    textField: 'productname',
+                    url: '/EasyUi/GetEasyUiUser',
+                    method: 'get',
+                    columns: [[
+                        {field:'name',title:'name',width:80},
+                        {field:'username',title:'username',width:120},
+                        {field:'phone',title:'phone',width:80,align:'right'},
+                        {field:'email',title:'email',width:80,align:'right'},
+
+                    ]],
+                    fitColumns: true,
+                    label: 'Select Item:',
+                    labelPosition: 'top'
+                ">
+                </select>
+            </div>
+        </div>
+    </div>
+    @*Basic Layout*@
+    <div title="Layout" style="padding: 10px; width: 50%; display: flex; justify-content: center">
+        <div style="margin:20px 0;"></div>
+        <div class="easyui-layout" style="width:700px;height:350px;">
+            <div data-options="region:'north'" style="height:50px"></div>
+            <div data-options="region:'south',split:true" style="height:50px;"></div>
+            <div data-options="region:'east',split:true" title="East" style="width:100px;"></div>
+            <div data-options="region:'west',split:true" title="West" style="width:100px;"></div>
+            <div data-options="region:'center',title:'Main Title',iconCls:'icon-ok'">
+                <table class="easyui-datagrid"
+                       data-options="url:'/EasyUi/GetEasyUiUser',method:'get',border:false,singleSelect:true,fit:true,fitColumns:true">
+                    <thead>
+                        <tr>
+                            <th data-options="field:'name'" width="80">name</th>
+                            <th data-options="field:'username'" width="100">username</th>
+                            <th data-options="field:'phone',align:'right'" width="80">phone</th>
+                            <th data-options="field:'email',align:'right'" width="80">email</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </div>
+    @*SwitchButton*@
+    <div title="SwitchButton" style="padding: 10px; width: 100%;">
+        <div class="kk" style="display: flex; align-items: center;margin-top:15%">
+            <div style="width:50%;">
+                <div style="margin: 20px 0; align-items: center; text-align: center "></div>
+                <div style="margin-bottom:20px">
+                    <input class="easyui-switchbutton sb sb1" name="fruit" label="Apple:" labelWidth="120" tabindex="1">
+                </div>
+                <div style="margin-bottom:20px">
+                    <input class="easyui-switchbutton sb sb2" name="fruit" label="Orange:" labelWidth="120" tabindex="2">
+                </div>
+                <div style="margin-bottom:20px">
+                    <input class="easyui-switchbutton sb sb3" name="fruit" label="Banana:" labelWidth="120" tabindex="3">
+                </div>
+            </div>
+            <div style="width:50%;">
+                <img id="imgFruit" style="width:300px;height:200px" src="" />
+            </div>
+        </div>
+
+        <div style="display: flex; justify-content: center; margin-top:30px;">
+            <a id="disable" href="#" class="easyui-linkbutton">disable</a>
+            <a id="enable" href="#" class="easyui-linkbutton">enable</a>
+            <a id="reset" href="#" class="easyui-linkbutton">Reset</a>
+        </div>
+    </div>
+    <div title="RadioGroup" style="padding: 10px; width:100%;">
+        <div class="easyui-panel" style="width: 100%; max-width: 800px; padding: 10px;">
+            <form id="ff">
+                <div style="margin-bottom:20px">
+                    <input class="rb easyui-radiobutton rb1" name="Item1" value="Item1" label="Item1:">
+                </div>
+                <div style="margin-bottom:20px">
+                    <input class="rb easyui-radiobutton rb2" name="Item2" value="Item2" label="Item2:">
+                </div>
+                <div style="margin-bottom:20px">
+                    <input class="rb easyui-radiobutton rb3" name="Item3" value="Item3" label="Item3:">
+                </div>
+                <a id="btn_rsRB" href="#" class="easyui-linkbutton">reset</a>
+            </form>
+        </div>
+            <div style="margin:20px 0;"></div>
+            <div class="easyui-panel" style="width:100%;max-width:800px;padding:30px 60px;">
+                <input id="tb"  class="easyui-tagbox" label="Add a tag" style="width:100%;">
+            </div>
+        </div>
+
+    </div>
+
+
+
+@section links{
+    <link href="~/Content/easyUi/demo.css" rel="stylesheet" />
+    <link href="~/Content/easyUi/color.css" rel="stylesheet" />
+
+    <link href="~/Content/easyUi/easyui.css" rel="stylesheet" />
+    <link href="~/Content/easyUi/icon.css" rel="stylesheet" />
+
+}
+@section scripts{
+    <script src="~/Content/js/JavaScript.js"></script>
+    <script src="~/Content/easyUi/jquery.easyui.min.js"></script>
+}

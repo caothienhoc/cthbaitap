@@ -1,0 +1,46 @@
+﻿
+@{
+    ViewBag.Title = "BaiMot";
+}
+<div class="main-2">
+    <div id="calculator">
+        <div class="row clear">
+            <p class="col-md-2 bg-danger" id="cle">C</p>
+            <div class="col-md-6" id="screen"></div>
+        </div>
+        <div class="keys">
+            <div class="row ">
+                <span class="col-md-2 bg-success num">7</span>
+                <span class="col-md-2 bg-success num">8</span>
+                <span class="col-md-2 bg-success num">9</span>
+                <span class="col-md-2 num ">+</span>
+            </div>
+            <div class="row">
+                <span class="col-md-2 bg-success num">4</span>
+                <span class="col-md-2 bg-success num">5</span>
+                <span class="col-md-2 bg-success num">6</span>
+                <span class="col-md-2  num">-</span>
+            </div>
+            <div class="row">
+                <span class="col-md-2 bg-success num">1</span>
+                <span class="col-md-2 bg-success num">2</span>
+                <span class="col-md-2 bg-success num">3</span>
+                <span class="col-md-2  num">÷</span>
+            </div>
+            <div class="row">
+                <span class="col-md-2 bg-success num">0</span>
+                <span class="col-md-2  num">.</span>
+                <p class="col-md-2 bg-warning num" id="eval">=</p>
+                <span class="col-md-2 num">x</span>
+            </div>
+        </div>
+    </div>
+</div>
+@section links{
+    <link href="~/Content/css/BaiMot.css" rel="stylesheet" />
+}
+@section scripts{
+    <script src="~/Content/js/BaiMot.js"></script>
+
+}
+

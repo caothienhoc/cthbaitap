@@ -1,0 +1,35 @@
+﻿#list-block{
+    padding: 0px;
+}
+
+.btn {
+    background-color: #95a5a6;
+    margin-bottom: 10px;
+    border-color: #95a5a6;
+}
+.card-footer fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+.holder {
+    height: 300px;
+    width: 465px;
+    border: 2px solid;
+}
+
+input[type="file"] {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.putIMG {
+    max-width: 300px;
+    max-height: 300px;
+    min-width: 465px;
+    min-height: 300px;
+}
+

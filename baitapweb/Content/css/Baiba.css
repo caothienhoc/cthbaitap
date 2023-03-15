@@ -1,0 +1,74 @@
+﻿
+.logo_color {
+    color: #2980b9;
+}
+
+.logo_color2 {
+    color: #7f8c8d;
+}
+
+.carousel-item {
+    height: 400px;
+}
+
+.whatwedo {
+    font-size: 20px;
+    display: flex;
+}
+
+#carouselExampleControls {
+   width :100%
+}
+
+.carouse_tagname {
+    position: absolute;
+    right: 32%;
+    top: 163px;
+    bottom: 0px;
+    z-index: 2;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
+
+.whatwedo {
+    margin-top: 20px;
+}
+
+hr {
+    margin-top: 50px;
+    height: 2px;
+}
+
+.cricle-img {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+    .cricle-img img {
+        width: 200px;
+        height: 200px;
+        border-radius: 300px;
+        justify-content: space-between;
+    }
+
+.cricle-imgs {
+    margin-top: 30px;
+}
+
+.cricle-img h3 {
+    margin-top: 5px;
+}
+
+.bi {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 64px;
+    right: 0px;
+    bottom: 0px;
+    left: 124px;
+    z-index: 2;
+    color: white;
+}

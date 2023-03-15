@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\baitapweb",
+    "\\baitapweb\\App_Data",
+    "\\baitapweb\\Content",
+    "\\baitapweb\\Content\\Bootstrap",
+    "\\baitapweb\\Models",
+    "\\baitapweb\\Views",
+    "\\baitapweb\\Views\\EasyUi",
+    "\\baitapweb\\Views\\Shared"
+  ],
+  "SelectedNode": "\\baitapweb\\Views\\EasyUi\\BaiMuoi.cshtml",
+  "PreviewInSolutionExplorer": false
+}

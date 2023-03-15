@@ -1,0 +1,21 @@
+﻿
+*{
+    margin:0px;
+    padding:0px;
+}
+.main {
+    background: #34495e;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.navbar {
+    background-color: #34495e;
+}
+#main-2 {
+    background: #808080;
+    margin-right: 500px;
+    
+    justify-content: center;
+}

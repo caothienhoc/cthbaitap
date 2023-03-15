@@ -1,0 +1,75 @@
+﻿
+@{
+    ViewBag.Title = "BaiNam";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<div class="content container-fluid" style="margin-top: 20px;">
+
+    <div>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal" style="background-color: #9b59b6; margin-bottom: 10px; border-color: #9b59b6; color: #ecf0f1 ">
+            Tạo mới
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">tạo mới</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div>
+                            <label>image:</label>
+                            <div class="holder">
+                                <img class="putIMG" src="" alt="">
+                            </div>
+                            <input type="file" id="photo" value="" src="">
+                            <div>
+                                <label>Name:</label>
+                                <input type="text" id="inputName" value="">
+                            </div>
+                            <div>
+                                <label>Description:</label>
+                                <input type="text" id="inputDescription" value="">
+                            </div>
+                            <div>
+                                <label>date:</label>
+                                <input type="date" id="date" name="date">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" id="btnClickCreate" onclick="UpdateFilmDetail()">Create</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container main">
+        <div class="content-main ">
+            <div class="row" id="list-block">
+                @*item*@
+            </div>
+        </div>
+    </div>
+
+</div>
+@section links
+{
+    <link href="~/Content/css/BaiNam.css" rel="stylesheet" />
+}
+@section scripts
+{
+    <script src="~/Content/js/BaiNam.js"></script>
+}

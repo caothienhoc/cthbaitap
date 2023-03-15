@@ -1,0 +1,43 @@
+﻿.clear {
+    margin-top: 50px;
+}
+
+.num {
+    margin: 2px;
+    border-style: solid;
+    text-align: center;
+    line-height: 60px;
+}
+#calculator{
+    width:90%;
+}
+#screen {
+    margin: 2px 0px 2px 2px;
+    border-style: solid;
+    height: 60px;
+    border-radius: 10px;
+    background-color: #95a5a6;
+    font-size: 20px;
+    line-height: 60px;
+    font-weight: bold;
+}
+
+#cle {
+    margin: 2px;
+    border-style: solid;
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+}
+
+table {
+    border-style: solid;
+}
+
+table tr {
+    border-style: solid;
+}
+
+table tr td {
+    border-style: solid;
+}
